@@ -1,0 +1,166 @@
+/* GENERAL */
+:root {
+    --grey: #cccccc;
+    --blue: #4a86e8;
+    --mainFont: 'Lexend', Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--mainFont);
+    background-color: #fff;
+    color: #555;
+}
+
+/* NAV */
+nav {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.navLink {
+    color: white;
+    font-family: var(--mainFont);
+    font-size: 2rem;
+    text-decoration: none;
+    width: 50%;
+}
+
+.navLinkBlue {
+    color: var(--blue);
+    font-weight: bolder;
+    display: inline-block;
+    transform: translateX(8px);
+}
+
+.navRight {
+    text-align: right;
+}
+
+/* HEADER */
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainTitle {
+    font-size: calc(9px + 8vw);
+    font-weight: bold;
+    color: var(--blue);
+    text-align: center;
+}
+
+.subTitle {
+    font-size: calc(3px + 2vw);
+    text-align: center;
+}
+
+@media (max-width:480px) {
+    .mainTitle {
+        font-size: calc(9px + 10vw);
+        font-weight: bold;
+        color: var(--blue);
+        text-align: center;
+    }
+    
+    .subTitle {
+        font-size: calc(3px + 5vw);
+        text-align: center;
+        color: #555; 
+    }
+}
+
+/* SECTION */
+section {
+    width: 100vw;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sectionTitle {
+    font-size: calc(16px + 3vw);
+    letter-spacing: 3px;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+.sectionContent {
+    width: 85vw;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
+/* WHY MARKUP */
+.cardHolder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.cardIcon {
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.material-symbols-outlined.size4 {
+    font-size: 4rem;
+}
+
+.cardTitle {
+    font-size: 1.8rem;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.cardDetail {
+    font-size: 1.2rem;
+}
+
+/* CONTACT */
+.contactEmail {
+    color: var(--blue);
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
