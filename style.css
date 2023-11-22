@@ -164,6 +164,11 @@ section {
     font-size: 1.2rem;
 }
 
+/* PREVIEW */
+.productPreview {
+    width: 90vw;
+}
+
 /* INTEREST */
 .actionButton {
     border: 0;
