@@ -132,14 +132,14 @@ section {
     border: 0;
     border-radius: 8px;
     background-color: var(--blue);
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.material-symbols-outlined.size4 {
-    font-size: 4rem;
+.cardIconImage {
+    width: 4rem;
+    height: 4rem;
 }
 
 .cardTitle {
